@@ -1,7 +1,16 @@
 aid: cowboy-clean-fuels
 name: Cowboy Clean Fuels
-description: 'Cowboy Clean Fuels is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Cowboy Clean Fuels (CCF) is a Denver, Colorado climate-technology company, founded in
+  2020 and operating in Gillette, Wyoming, that produces carbon-negative renewable natural gas (RNG)
+  while permanently sequestering atmospheric carbon dioxide. CCF injects non-food-grade organic
+  biomass — residue products of sugar-beet refining such as molasses — into depleted coal bed methane
+  (CBM) wells in the Powder River Basin, where naturally occurring methanogenic microorganisms convert
+  the feedstock into methane and carbon dioxide; the coal seam then selectively adsorbs and permanently
+  stores the CO2. Its lead development is the Triangle Unit Renewable Energy and Carbon Capture and
+  Storage Project (TRECCS) near Gillette, Wyoming, and in May 2025 it signed an offtake agreement with
+  Mercuria for RNG produced under its BiCRS+RNG methodology. Cowboy Clean Fuels is an energy and
+  carbon-dioxide-removal operator, not a software vendor: it sells molecules and carbon removal
+  credits, and publishes no developer program, public API, SDK or machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/cowboy-clean-fuels/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,13 @@ created: '2026-08-11'
 modified: '2026-08-11'
 tags:
 - Company
+- Energy
+- Renewable Natural Gas
+- Carbon Removal
+- Carbon Sequestration
+- Climate Tech
+- Coal Bed Methane
+- Wyoming
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,41 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cowboy-clean-fuels-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://cowboycleanfuels.com/
+- type: About
+  url: https://cowboycleanfuels.com/about/
+- type: News
+  url: https://cowboycleanfuels.com/news/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cowboy-clean-fuels
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/cowboy-clean-fuels
+x-enrichment:
+  date: '2026-08-11'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: >-
+    Every path on cowboycleanfuels.com — homepage, /llms.txt, /robots.txt, /sitemap.xml and
+    all nine /.well-known/ probes — answered HTTP 202 with a SiteGround "sgcaptcha"
+    meta-refresh interstitial instead of a document, and the www vhost is a legacy
+    Squarespace host that 301s everything back to that apex, so not one page of the
+    provider's own site could be read without evading the challenge.
+  evidence:
+  - url: https://cowboycleanfuels.com/
+    status: 202
+  - url: https://cowboycleanfuels.com/llms.txt
+    status: 202
+  - url: https://cowboycleanfuels.com/.well-known/agent-card.json
+    status: 202
+  - url: https://cowboycleanfuels.com/openapi.json
+    status: 202
+  - url: https://www.cowboycleanfuels.com/robots.txt
+    status: 200
+  checked: '2026-08-11'

@@ -1,0 +1,117 @@
+generated: '2026-08-11'
+method: probed
+source: live HTTP probes of https://cowboycleanfuels.com and https://www.cowboycleanfuels.com
+note: >-
+  NO HIT. Every /.well-known/ path on the apex host answered HTTP 202 with a SiteGround
+  anti-bot interstitial ("sgcaptcha") rather than a document — an HTML meta-refresh shell,
+  not a served well-known resource. A 202 challenge is NOT evidence the provider serves
+  these surfaces, so no WellKnown or SecurityTxt pointer is emitted. The www host is a
+  legacy Squarespace vhost that 301s every path to the apex (its default robots.txt is the
+  one exception that returns 200, and it disallows AI crawlers including ClaudeBot,
+  GPTBot and anthropic-ai). Challenges are not evaded, so these paths are recorded as
+  unread rather than as absent.
+hosts:
+- host: cowboycleanfuels.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /llms.txt
+    status: 202
+    result: bot-challenge
+    file: null
+  - path: /robots.txt
+    status: 202
+    result: bot-challenge
+    file: null
+- host: www.cowboycleanfuels.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 301
+    result: redirect-to-apex
+    file: null
+  - path: /llms.txt
+    status: 301
+    result: redirect-to-apex
+    file: null
+  - path: /robots.txt
+    status: 200
+    result: squarespace-default-robots
+    file: null
+contract_discovery:
+  openapi:
+  - url: https://cowboycleanfuels.com/openapi.json
+    status: 202
+    result: bot-challenge
+  - url: https://cowboycleanfuels.com/swagger.json
+    status: 202
+    result: bot-challenge
+  - url: https://cowboycleanfuels.com/api-docs
+    status: 202
+    result: bot-challenge
+  - url: https://cowboycleanfuels.com/docs
+    status: 202
+    result: bot-challenge
+  - url: https://cowboycleanfuels.com/api
+    status: 202
+    result: bot-challenge
+  - url: https://cowboycleanfuels.com/developers
+    status: 202
+    result: bot-challenge
+  graphql:
+  - url: https://cowboycleanfuels.com/graphql
+    status: 202
+    result: bot-challenge
+  agent_card:
+  - url: https://cowboycleanfuels.com/.well-known/agent-card.json
+    status: 202
+    result: bot-challenge
+  - url: https://cowboycleanfuels.com/.well-known/agent.json
+    status: 202
+    result: bot-challenge
+  dns_enumeration:
+    note: >-
+      No API, docs, developer, app, portal, status or trust subdomain resolves for
+      cowboycleanfuels.com — all NXDOMAIN. Only the apex (SiteGround, 35.215.119.244)
+      and www (CNAME ext-sq.squarespace.com) exist.
+    resolved:
+    - cowboycleanfuels.com
+    - www.cowboycleanfuels.com
+    nxdomain:
+    - api.cowboycleanfuels.com
+    - docs.cowboycleanfuels.com
+    - developer.cowboycleanfuels.com
+    - app.cowboycleanfuels.com
+    - portal.cowboycleanfuels.com
+    - status.cowboycleanfuels.com
+    - trust.cowboycleanfuels.com
+  registries:
+    github_org: none
+    github_repo_search: 0 results for "cowboy clean fuels"
+    npm: no first-party package
+    pypi: 404 for cowboy-clean-fuels

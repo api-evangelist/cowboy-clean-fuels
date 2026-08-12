@@ -42,5 +42,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cowboy Clean Fuels is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Cowboy Clean Fuels (CCF) is a Denver, Colorado climate-technology company, founded in 2020 and
+operating in Gillette, Wyoming, that produces carbon-negative renewable natural gas (RNG) while
+permanently sequestering atmospheric carbon dioxide. CCF injects non-food-grade organic biomass —
+residue products of sugar-beet refining such as molasses — into depleted coal bed methane (CBM) wells
+in the Powder River Basin, where naturally occurring methanogenic microorganisms convert the feedstock
+into methane and carbon dioxide; the coal seam then selectively adsorbs and permanently stores the CO2.
+Its lead development is the Triangle Unit Renewable Energy and Carbon Capture and Storage Project
+(TRECCS) near Gillette, Wyoming.
+
+Cowboy Clean Fuels is an energy and carbon-dioxide-removal operator, not a software vendor. No public
+API, SDK, developer portal or machine-readable specification was found. See `x-coverage` in `apis.yml`
+for what was probed and what stopped the probe.
+
+- https://cowboycleanfuels.com/
+- https://www.linkedin.com/company/cowboy-clean-fuels
+- https://www.crunchbase.com/organization/cowboy-clean-fuels
