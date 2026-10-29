@@ -64,19 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cowboy Clean Fuels (CCF) is a Denver, Colorado climate-technology company, founded in 2020 and
-operating in Gillette, Wyoming, that produces carbon-negative renewable natural gas (RNG) while
-permanently sequestering atmospheric carbon dioxide. CCF injects non-food-grade organic biomass —
-residue products of sugar-beet refining such as molasses — into depleted coal bed methane (CBM) wells
-in the Powder River Basin, where naturally occurring methanogenic microorganisms convert the feedstock
-into methane and carbon dioxide; the coal seam then selectively adsorbs and permanently stores the CO2.
-Its lead development is the Triangle Unit Renewable Energy and Carbon Capture and Storage Project
-(TRECCS) near Gillette, Wyoming.
+Cowboy Clean Fuels (CCF) is a Denver, Colorado climate-technology company, founded in 2020 and operating in Gillette, Wyoming, that produces carbon-negative renewable natural gas (RNG) while permanently sequestering atmospheric carbon dioxide. CCF injects non-food-grade organic biomass — residue products of sugar-beet refining such as molasses — into depleted coal bed methane (CBM) wells in the Powder River Basin, where naturally occurring methanogenic microorganisms convert the feedstock into methane and carbon dioxide; the coal seam then selectively adsorbs and permanently stores the CO2. Its lead development is the Triangle Unit Renewable Energy and Carbon Capture and Storage Project (TRECCS) near Gillette, Wyoming, and in May 2025 it signed an offtake agreement with Mercuria for RNG produced under its BiCRS+RNG methodology. Cowboy Clean Fuels is an energy and carbon-dioxide-removal operator, not a software vendor: it sells molecules and carbon removal credits, and publishes no developer program, public API, SDK or machine-readable specification.
 
-Cowboy Clean Fuels is an energy and carbon-dioxide-removal operator, not a software vendor. No public
-API, SDK, developer portal or machine-readable specification was found. See `x-coverage` in `apis.yml`
-for what was probed and what stopped the probe.
+**Areas:** Company · Energy · Renewable Natural Gas · Carbon Removal · Carbon Sequestration · Climate Tech · Coal Bed Methane · Wyoming
 
-- https://cowboycleanfuels.com/
-- https://www.linkedin.com/company/cowboy-clean-fuels
-- https://www.crunchbase.com/organization/cowboy-clean-fuels
+## Cowboy Clean Fuels on APIs.io
+
+Everything profiled for Cowboy Clean Fuels is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cowboy-clean-fuels/](https://apis.io/providers/cowboy-clean-fuels/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cowboy Clean Fuels Domain Security](https://apis.io/security/cowboy-clean-fuels/cowboy-clean-fuels-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cowboycleanfuels.com/)
+
+## API Evangelist rating
+
+**Kin Score 3.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 45.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cowboy-clean-fuels/](https://apis.io/providers/cowboy-clean-fuels/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cowboy Clean Fuels: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cowboy-clean-fuels/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
